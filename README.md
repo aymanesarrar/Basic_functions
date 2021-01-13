@@ -18,3 +18,5 @@
 16. volume of sphere
 17. leap year
 18. binary to decimal
+19. decimal to binary
+20. binary to octal
