@@ -2,6 +2,6 @@
 #include <stdio.h>
 int main()
 {
-    int result = binary_to_decimal(1001);
+    int result = binary_to_octal(110101);
     printf("%d",result);
 }

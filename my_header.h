@@ -20,5 +20,7 @@ int area_of_triangle(int height, int base);
 float volume_of_sphere(float radius);
 int leap_year(int year);
 int binary_to_decimal(int nb);
+int decimal_to_binary(int nb);
+int binary_to_octal(int nb);
 
 #endif

@@ -174,3 +174,29 @@ int binary_to_decimal(int nb)
   }
   return sum;
 }
+int decimal_to_binary(int nb)
+{
+  int remainder, binary, i;
+  binary = 0;
+  i = 1;
+  while (nb != 0) {
+    remainder = nb % 2;
+    binary = binary + (remainder * i);
+    nb = nb / 2;
+    i = i * 10;
+  }
+  return binary;
+}
+int binary_to_octal(int nb)
+{
+  int octal = 0, remainder, i = 1, decimal;
+  while (nb != 0)
+  {
+    remainder = nb % 1000;
+    decimal = binary_to_decimal(remainder);
+    octal = octal + (decimal * i);
+    i = i * 10;
+    nb = nb / 1000;
+  }
+  return octal;
+}
