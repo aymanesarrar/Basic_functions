@@ -200,3 +200,42 @@ int binary_to_octal(int nb)
   }
   return octal;
 }
+int gcd_recursive(int a, int b)
+{
+  if (a == b)
+    return a;
+  else if (a > b)
+    return gcd_recursive(a-b, b);
+  else if (b > a)
+    return gcd_recursive(a, b-a);
+}
+int gcd_no_recursive(int a, int b)
+{
+  int i, gcd;
+  i = 1;
+  while (i <= a && i <= b)
+  {
+    if (a % i == 0 && b % i == 0)
+      gcd = i;
+    i++;
+  }
+  return gcd;
+}
+int lcm_with_gcd(int a, int b)
+{
+  return (a * b / gcd_recursive(a,b));
+}
+int lcm_iterative(int a, int b)
+{
+  int multiple, lcm;
+  multiple = (a < b) ? a : b;
+  while (1)
+  {
+    if ((multiple % a == 0) && (multiple % b == 0)) {
+      lcm = multiple;
+      break;
+    }
+    multiple++;
+  }
+  return lcm;
+}

@@ -22,5 +22,9 @@ int leap_year(int year);
 int binary_to_decimal(int nb);
 int decimal_to_binary(int nb);
 int binary_to_octal(int nb);
+int gcd_recursive(int a, int b);
+int gcd_no_recursive(int a, int b);
+int lcm_with_gcd(int a, int b);
+int lcm_iterative(int a, int b);
 
 #endif

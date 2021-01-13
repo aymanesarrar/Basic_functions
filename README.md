@@ -20,3 +20,7 @@
 18. binary to decimal
 19. decimal to binary
 20. binary to octal
+21. gcd recursive
+22. gcd iterative
+23. lcm recursive
+24. lcm iterative

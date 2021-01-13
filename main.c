@@ -2,6 +2,6 @@
 #include <stdio.h>
 int main()
 {
-    int result = binary_to_octal(110101);
+    int result = lcm_iterative(6,10);
     printf("%d",result);
 }
