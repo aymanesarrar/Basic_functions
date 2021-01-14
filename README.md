@@ -24,3 +24,6 @@
 22. gcd iterative
 23. lcm recursive
 24. lcm iterative
+## Arrays
+1. smallest and largest number in an array
+2. second largest number in an array

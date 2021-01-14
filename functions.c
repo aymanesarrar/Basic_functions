@@ -239,3 +239,49 @@ int lcm_iterative(int a, int b)
   }
   return lcm;
 }
+int *largest_and_smallest(int arr[], int size, int newArr[2]) {
+  int i, smallest, largest;
+  i = 0;
+  smallest = arr[0];
+  largest = arr[0];
+  while (i < size)
+  {
+    if (arr[i] < smallest)
+    {
+      swap(&arr[i], &smallest);
+    } else if (arr[i] > largest)
+    {
+      swap(&arr[i], &largest);
+    }
+    i++;
+  }
+  newArr[0] = smallest;
+  newArr[1] = largest;
+  return newArr;
+}
+int second_largest(int arr[], int size)
+{
+  int secondLargest;
+  int largest;
+  int i;
+  secondLargest = arr[0];
+  while (i < size)
+  {
+    if (largest < arr[i])
+    {
+      swap(&arr[i], &largest);
+    }
+    i++;
+  }
+  i = 0;
+  secondLargest  = arr[0];
+  while (i < size)
+  {
+    if ((secondLargest < arr[i]) && (arr[i] != largest))
+    {
+      swap(&arr[i], &secondLargest);
+    }
+    i++;
+  }
+  return secondLargest;
+}

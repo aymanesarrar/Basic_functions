@@ -26,5 +26,7 @@ int gcd_recursive(int a, int b);
 int gcd_no_recursive(int a, int b);
 int lcm_with_gcd(int a, int b);
 int lcm_iterative(int a, int b);
+int *largest_and_smallest(int arr[], int size, int newArr[2]);
+int second_largest(int arr[], int size);
 
 #endif
